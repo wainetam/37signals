@@ -1,0 +1,232 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF RESET CODE */
+
+#header {
+	text-align: right;
+	color: #336699;
+	margin: 30px;
+	font-size: 12px;
+}
+
+#header ul li {
+	display: inline;
+	padding: 0 20px 0 0;
+}
+
+#header a {
+	color: #336699;
+	text-decoration: none;
+}
+
+#logo {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#sign-in a {
+	color: #18afe4;
+}
+
+body {
+	font-family: Tahoma;
+	font-size: 14px;
+	height: 600px;
+}
+
+.headline {
+	font-size: 58px;
+	font-family: Garamond;
+	font-weight: bold;
+	width: 900px;
+	letter-spacing: -2px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.headline-mouseover {
+	font-size: 48px;
+}
+
+.subtext {
+	font-size: 20px;
+	font-family: Garamond;
+	width: 900px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.subtext-mouseover {
+	font-size: 15px;
+	font-family: Verdana;
+	font-weight: normal;
+	line-height: 20px;
+}
+
+#arrow-left {
+	position: relative;
+	left: 125px;
+	top: -250px;
+	height: 60px;
+}
+
+#arrow-right {
+	position: relative;
+	left: -33px;
+	top: -250px;
+	height: 60px;
+}
+
+.button {
+	border: #e8e8e8 solid 1px; /*gray*/
+	border-radius: 3px;
+	background-color: #efefef;
+	width: 160px;
+	height: 220px;
+	margin: 20px;
+	padding: 10px;
+	background: linear-gradient(#fefefe, #efefef);
+	z-index:0;
+	position: relative;
+}
+
+.button img {
+	padding: 5px;
+}
+
+.button p {
+	color: black;
+	margin-top: 15px;	
+	text-align: center;
+}
+
+.button a {
+	display: block;
+	/*background-color: red;	*/
+	text-decoration: none;
+	text-align: center; /*this aligns image?  because it's in an a tag?*/
+}
+
+.button:hover:after { /*takes care of both basecamp and highrise*/
+	content: url('images/arrow-left.png');
+	position: relative;
+	top: -250px;
+	right: -124px; /*Q: how do I change the size of the image within after*/
+	width: 40px;
+	height: 40px;
+}
+
+#campfire:hover:after {
+	content: url('images/arrow-right.png');
+	right: 34px;
+}
+
+#button-container {
+	
+	margin-left: auto;
+	margin-right: auto;
+	width: 690px; /*why does this change the position on the page*/
+	background-color: yellow;
+}
+
+#subproduct-highlight {
+	color: #cc0000; /*red*/
+	font-weight: bold;
+}
+
+#product-highlight {
+	color: #336699; /*blue*/
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.product-underline {
+	text-decoration: underline;
+}
+
+.superscript {
+	text-decoration: none;
+	vertical-align: super;
+	font-size: 0.5em;
+	color: gray;
+}
+
+#basecamp {
+	float: left;
+	/*margin-left: 27%;*/;
+}
+
+#highrise {
+	float: left;
+	
+}
+
+#campfire {
+	float: left;
+	
+}
+
+#footer {
+	clear: both;
+	text-align: center;
+	font-size: 24px;
+	color: #e8e8e8;
+	letter-spacing: 20px;
+	margin: 305px;
+
+}
